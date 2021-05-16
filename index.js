@@ -51,7 +51,7 @@ function allWagesFor() {
   let sum = getDate.reduce((cur, acc) => {
     return cur + wagesEarnedOnDate(this, acc)
   }.bind(this, 0))
-  return sum
+  return sum;
 }
 
 
@@ -75,4 +75,3 @@ let allWagesFor = function () {
 
     return payable
 }
-;
