@@ -46,13 +46,6 @@ function createTimeInEvent (dateStamp) {
    return parseInt(pay);
  }
 
-function allWagesFor() {
-  let getDate = this.timeInEvents.map(cur => cur.date)
-  let sum = getDate.reduce((cur, acc) => {
-    return cur + wagesEarnedOnDate(this, acc)
-  }.bind(this), 0)
-  return sum;
-}
 
 
 /*
