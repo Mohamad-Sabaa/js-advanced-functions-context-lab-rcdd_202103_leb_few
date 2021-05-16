@@ -49,7 +49,7 @@ function createTimeInEvent (dateStamp) {
 // function findEmployeeByFirstName(srcArray, firstName) {
 //   return srcArray.find(e => e.firstName === firstName)
 // }
-// 
+//
 // function calculatePayroll(arrOfEmployee) {
 //   return arrOfEmployee.reduce((acc, cur) => {
 //     return acc + allWagesFor.call(this, cur)
