@@ -46,6 +46,9 @@ function createTimeInEvent (dateStamp) {
    return parseInt(pay);
  }
 
+function findEmployeeByFirstName(srcArray, firstName) {
+  return srcArray.find(e => e.firstName === firstName)
+}
 
 
 /*
