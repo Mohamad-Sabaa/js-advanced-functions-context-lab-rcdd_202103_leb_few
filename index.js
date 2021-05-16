@@ -42,7 +42,7 @@ function createTimeInEvent (dateStamp) {
  }
 
  function wagesEarnedOnDate(date){
-   let pay = hoursWorkedOnDate(this, date) * this.payPerHour;
+   let pay = hoursWorkedOnDate.call(this, date) * this.payPerHour;
    return parseInt(pay);
  }
 
