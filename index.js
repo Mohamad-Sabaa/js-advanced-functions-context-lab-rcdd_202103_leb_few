@@ -52,7 +52,7 @@ function findEmployeeByFirstName(srcArray, firstName) {
 
 function calculatePayroll(arrOfEmployee) {
   return arrOfEmployee.reduce((acc, cur) => {
-    return acc + wagesEarnedOnDate.call(this, cur)
+    return acc + allWagesFor.call(this, cur)
   }, 0)
 }
 /*
