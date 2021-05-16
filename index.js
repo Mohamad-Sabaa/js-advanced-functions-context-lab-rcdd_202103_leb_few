@@ -46,15 +46,15 @@ function createTimeInEvent (dateStamp) {
    return parseInt(pay);
  }
 
-function findEmployeeByFirstName(srcArray, firstName) {
-  return srcArray.find(e => e.firstName === firstName)
-}
-
-function calculatePayroll(arrOfEmployee) {
-  return arrOfEmployee.reduce((acc, cur) => {
-    return acc + allWagesFor.call(this, cur)
-  }, 0)
-}
+// function findEmployeeByFirstName(srcArray, firstName) {
+//   return srcArray.find(e => e.firstName === firstName)
+// }
+// 
+// function calculatePayroll(arrOfEmployee) {
+//   return arrOfEmployee.reduce((acc, cur) => {
+//     return acc + allWagesFor.call(this, cur)
+//   }, 0)
+// }
 /*
  We're giving you this function. Take a look at it, you might see some usage
  that's new and different. That's because we're avoiding a well-known, but
@@ -74,4 +74,14 @@ let allWagesFor = function () {
     }.bind(this), 0) // <== Hm, why did we need to add bind() there? We'll discuss soon!
 
     return payable
+}
+
+function findEmployeeByFirstName(srcArray, firstName) {
+  return srcArray.find(e => e.firstName === firstName)
+}
+
+function calculatePayroll(arrOfEmployee) {
+  return arrOfEmployee.reduce((acc, cur) => {
+    return acc + allWagesFor.call(this, cur)
+  }, 0)
 }
